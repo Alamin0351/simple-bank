@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alamin's bank</title>
+    <style>
+        #header {
+            margin: auto;
+            margin-top: 30px;
+            color: lightblue;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #display {
+            margin: 0,auto;
+            text-align: center;
+        }
+
+        .alamin {
+            background-color : black;
+            color: white;
+            height: 100px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            font-size: 25px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+
+#input {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 50px;
+
+}
+#diposit{
+    width: 300px;
+    height: 30px;
+}
+
+#withdraw{
+    width: 300px;
+    height: 30px;
+}
+  
+    </style>
+</head>
+<body>
+    <h1 id="header">
+        Welcome to Alamin's bank
+    </h1>
+
+    <section id="display">
+        <h2 class="alamin">Diposit: $ <span id="Current-diposit">00</span></h2>
+        <h2 class="alamin">Withdraw: $ <span id="current-withdraw">00</span></h2>
+        <h2 class="alamin">balance: $ <span id="current-balance">760</span></h2>
+    </section>
+
+    <section id="input">
+        <div>
+            <input type="number" id="diposit" placeholder = "how much wanna diposit?">
+            <br><br>
+            <button id="dipositBtn">dipositBtn</button>
+        </div>
+        <div>
+            <input type="number" id="withdraw" placeholder = 'how much wanna withdraw?'>
+            <br><br>
+            <button id="withdrawBtn">Withdraw</button>
+        </div>
+
+    </section>
+    <script src="banking.js"></script>
+</body>
+</html>
