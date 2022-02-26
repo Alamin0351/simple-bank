@@ -5,5 +5,7 @@ document.getElementById('btn').addEventListener('click',function(){
 
     if (mail == 'alamin' && password == 'secret'){
         window.location.href = 'banking.html';
+    }else{
+        alert('please give the correct user name & password');
     }
 });
